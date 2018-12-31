@@ -17,5 +17,5 @@ function doGet() {
     article.img = img; 
     articles.push(article);
   }
-  return ContentService.createTextOutput("(" + JSON.stringify(articles) + ")").setMimeType(ContentService.MimeType.JAVASCRIPT);
+  return ContentService.createTextOutput(JSON.stringify(articles)).setMimeType(ContentService.MimeType.JAVASCRIPT);
 }
